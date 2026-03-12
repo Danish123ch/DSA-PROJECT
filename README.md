@@ -1,33 +1,25 @@
-University of Gujrat (UOG) Navigation System 🎓📍
-🚀 Overview
-The UOG Navigation System is a C++ application designed to help students and visitors find the most efficient routes within the university campus. By representing the campus as a Weighted Graph, the system calculates paths based on both the number of buildings (BFS) and the actual physical distance in meters (Dijkstra).
+# UOG Campus Navigation System 🎓📍
 
-🛠 Technical Logic & Algorithms
-As a Logical Builder, I implemented three core graph traversal algorithms to power this system:
+A high-performance C++ navigation tool designed for the **University of Gujrat** campus. This project solves pathfinding problems by representing the campus as a weighted graph and applying advanced Data Structures and Algorithms (DSA).
 
-DFS (Depth First Search): Used for initial route verification to check if a path exists between two locations.
+### 🚀 Key Logic & Algorithms
+As a **Logical Builder**, I implemented three primary algorithms from scratch to ensure efficient navigation:
+* **Dijkstra’s Algorithm:** Calculates the absolute shortest physical distance (in meters) between any two locations using a weighted adjacency matrix.
+* **BFS (Breadth-First Search):** Finds the "Minimum Building" path, perfect for users wanting the fewest stops between locations.
+* **DFS (Depth-First Search):** Performs a pre-check to verify if a valid path exists before running more complex calculations.
 
-BFS (Breadth-First Search): Optimized to find the path with the minimum number of buildings/stops.
+### 🛠 Technical Features
+* **Custom Graph Implementation:** Uses a 16x16 adjacency matrix to map 16 key campus locations including the Admin Block, CS Department, and various Cafes.
+* **Recursive Path Reconstruction:** Utilizes a recursive backtracking function to display the full route names in the correct sequence.
+* **String-to-Int Mapping:** Includes a custom parser that allows users to input location names directly instead of IDs, improving the user experience.
 
-Dijkstra’s Algorithm: Implemented to calculate the shortest physical distance between two points using an adjacency matrix with weighted edges.
+### 📂 Project Structure
+* **Language:** C++
+* **Paradigm:** Procedural with a focus on Algorithm Efficiency.
+* **Storage:** In-memory graph representation with real-world distance data.
 
-🗺 Campus Mapping
-The system features 16 key campus locations, including:
+### 👤 Author
+**[Danish Shafique]** *Computer Science Student | Logical Builder | Communication Expert*
 
-Main Gate & Admin Block
-
-CS Department & Library
-
-Academic Blocks: Aljazri, Arfa Karim, Ibn-e-Sina, Ibn-e-Khuldun, etc.
-
-Student Hubs: Hostel, Sports Complex, and various Cafes.
-
-💻 Key Features
-String-to-Int Mapping: Users can type full location names instead of ID numbers for a better user experience.
-
-Recursive Path Reconstruction: Uses a recursive showRoute function to backtrack and display the full path from start to finish.
-
-Real-world Distance: The adjacency matrix is populated with real-world distance estimates in meters.
-
-👤 Author
-[Danish Shafique] Computer Science Student | Logical Builder | Communication Expert
+---
+*Developed as part of my deep dive into Graph Theory and Pathfinding Algorithms.*
